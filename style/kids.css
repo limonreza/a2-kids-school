@@ -116,9 +116,7 @@
     font-weight: 700;
     text-align: center;
   }
-  .card-container{
-   
-  }
+ 
   #facts-card{
     width: 367px;
     height: 476px;
@@ -126,11 +124,64 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 0.94px solid 28px rgba(0, 0, 0, 0.05);
+    border: 0.94px solid rgb(222, 245, 255);
+    box-shadow: 0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+    margin-right: 28px;
+    margin-top: 80px;
   }
   .card-1{
-    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),
+    rgba(255, 255, 255, 0) 40%),
     rgb(255, 255, 255);
+    
+  }
+  .card-2{
+    background: linear-gradient(180.00deg,
+    rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),
+    rgb(255, 255, 255);
+  }
+  .card-3{
+    background: linear-gradient(180.00deg, 
+    rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),
+    rgb(255, 255, 255);
+  }
+  .card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .card-description{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #808080;
+    width: 286px;
+  }
+  .k-read-more{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #64C8FF;
+  }
+  .e-read-more{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #F0AA00;
+  }
+  .m-read-more{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #8700FF;
+  }
+  .arrow-container{
+    width: 60px;
+    height: 60px;
+    background: #FEA301;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow-right{
+    font-size: 1.5rem;
+    font-weight: 900;
+    gap: 10px;
   }
 
   /* Responsive media query for Mobile Device */
