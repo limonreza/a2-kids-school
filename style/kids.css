@@ -184,6 +184,11 @@
     gap: 10px;
   }
 
+  /* .story-banner-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  } */
+
   /* Responsive media query for Mobile Device */
   @media screen and (max-width: 576px) {
     .navbar, .scl-icon, .nav-links, .banner{
