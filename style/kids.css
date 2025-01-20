@@ -71,8 +71,8 @@
   }
 /* banner related style */
 .banner{
-    display: flex;
     align-items: center;
+    margin-bottom: 60px;
 }
 .banner-content{
     max-width: 640px;
@@ -88,6 +88,7 @@
 }
 .banner-img{
     margin-top: 18px;
+    width: 100%;
 }
 .empowering{
     color: #FEA301;
@@ -104,11 +105,37 @@
     border-radius: 12px;
     border: none;
   }
-  
+
+  /* Main related style */
+  main{
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+  .main-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .card-container{
+   
+  }
+  #facts-card{
+    width: 367px;
+    height: 476px;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 0.94px solid 28px rgba(0, 0, 0, 0.05);
+  }
+  .card-1{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),
+    rgb(255, 255, 255);
+  }
 
   /* Responsive media query for Mobile Device */
   @media screen and (max-width: 576px) {
-    .navbar{
+    .navbar, .scl-icon, .nav-links, .banner{
         flex-direction: column;
         align-items: flex-start;
     }
