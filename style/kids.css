@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .quick-sand-font{
     font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .raleway-font {
+    font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -31,15 +39,18 @@
     text-decoration: none;
     font-weight: 700;
   }
+
   .scl{
     font-size: 2rem;
     font-weight: 700;
     margin-left: 11px;
   }
+
   .scl-icon{
     height: 62px;
     align-items: center;
   }
+
   .home{
     font-size: 1.25rem;
     color: #FEA301;
@@ -65,42 +76,55 @@
     border-radius: 12px;
     border: none;
   }
+
   .bg-img{
     background-image: url("../assets/bg.png");
     max-width: 100%;
   }
 
-  .navbar, .banner, .story-container, .footer-container{
+  .navbar,
+  .banner,
+  .story-container,
+  .footer-container{
     max-width: 1160px;
     margin: 0 auto;
   }
+
+
 /* banner related style */
 .banner{
     align-items: center;
     margin-bottom: 60px;
 }
+
 .banner-content{
     max-width: 640px;
     margin: 0 auto;
 }
+
 .banner-title{
     font-size: 3.5rem;
     font-weight: 700;
 }
+
 .banner-description{
     font-size: 1.25rem;
     font-weight: 400;
 }
+
 .banner-img{
     margin-top: 18px;
     width: 100%;
 }
+
 .empowering{
     color: #FEA301;
 }
+
 .t-v{
     color: #01ACFD;
 }
+
 .banner-btn{
     font-size: 1.25rem;
     font-weight: 700;
@@ -111,19 +135,23 @@
     border: none;
   }
 
+
   /* Main related style */
   main{
     max-width: 1160px;
     margin: 0 auto;
   }
+
   .main-title{
     font-size: 2.8rem;
     font-weight: 700;
     text-align: center;
   }
+
  .cards-container{
     justify-content: center;
  }
+
   #facts-card{
     width: 367px;
     height: 476px;
@@ -135,81 +163,113 @@
     box-shadow: 0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
     margin-right: 28px;
     margin-top: 80px;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
   }
+
   .card-1{
     background: linear-gradient(180.00deg, rgb(222, 245, 255),
     rgba(255, 255, 255, 0) 40%),
     rgb(255, 255, 255);
-    
   }
+
   .card-2{
     background: linear-gradient(180.00deg,
     rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),
     rgb(255, 255, 255);
   }
+
   .card-3{
     background: linear-gradient(180.00deg, 
     rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),
     rgb(255, 255, 255);
   }
+
   .card-title{
     font-size: 1.5rem;
     font-weight: 700;
   }
+
   .card-description{
     font-size: 0.9rem;
     font-weight: 500;
     color: #808080;
     width: 286px;
   }
+
   .k-read-more{
     font-size: 0.9rem;
     font-weight: 700;
     color: #64C8FF;
   }
+
   .e-read-more{
     font-size: 0.9rem;
     font-weight: 700;
     color: #F0AA00;
   }
+
   .m-read-more{
     font-size: 0.9rem;
     font-weight: 700;
     color: #8700FF;
   }
 
+  .slide-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
   /* Our stories related style */
   .story-section{
     background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),
-    rgba(255, 255, 255, 0.3) 100%);  
+    rgba(255, 255, 255, 0.3) 100%);
+    margin-top: 60px; 
   }
+
   .story-title{
     font-size: 2.8rem;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 80px;
   }
-  /* .story-container{
-    border: 2px solid tomato;
-  } */
+
    .story1-title{
     font-size: 1.5rem;
     font-weight: 700;
     margin-left: 38px;
    }
+
    .story-description{
     margin-left: 38px;
    }
-   /* .btn-1{
+
+   .btn1{
     font-size: 0.9rem;
     font-weight: 500;
+    font-family: raleway;
     color: white;
     padding: 15px 19px;
     background-color: #3CD8E8;
     border-radius: 47px;
     border: none;
     margin-left: 38px;
-   } */
+   }
+
+   .bt1-container{
+    margin-top: -30px;
+   }
+
+   #btn-2, #btn-4, #btn-5{
+    background: #95B226;
+   }
+
+   #btn-3{
+    background: #5D58F0;
+   }
+  
   .row{
     width: 540px;
     height: 630px;
@@ -217,40 +277,58 @@
     background: rgb(255, 255, 255);
     margin-right: 18px;
   }
+
+  .story1-img{
+    border-radius: 16px 16px 0px 0px;
+  }
   
   .story1-title{
     font-size: 1.5rem;
     font-weight: 700;
-    
   }
+
   .story-description{
     font-size: 0.9rem;
     font-weight: 500;
     width: 450px;
     color: rgb(102, 102, 102);
   }
+
   .vertical{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-
+    gap: 10px;
   }
+
   .vertical-row{
     margin-right: 19px;
     border-radius: 16px;
     background: rgb(255, 255, 255);
   }
+
   .vertical-title{
     text-align: center;
   }
+
+  .btn-container{
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .banner-btn{
+    margin-bottom: 60px;
+  }
+
 
   /* Footer related style */
   .bg-light{
     background: rgb(1, 172, 253);
   }
+
   .footer-container{
     justify-content: space-between;
   }
+
   .footer, .footer-links, .keep-in-touch{
     margin-top: 120px;
     margin-bottom: 150px;
@@ -260,22 +338,27 @@
     align-items: center;
     color: rgba(255, 255, 255, 1);
   }
+
   .footer-title{
     font-weight: 700;
     font-size: 2.6rem;
+    margin-left: 10px;
   }
+
   .footer-description{
     font-size: 20px;
     font-weight: 400;
     width: 400px;
     color: #FFFFFF;
   }
+
   .about-title{
     font-size: 1.5rem;
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 32px;
   }
+
   .footer-item{
     list-style: none;
     margin-bottom: 20px;
@@ -287,6 +370,7 @@
     font-size: 1.25rem;
     font-weight: 500;
   }
+  
   .keep-title{
     font-size: 1.6rem;
     font-weight: 700;
