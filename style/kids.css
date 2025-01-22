@@ -116,6 +116,9 @@
   }
 
   /* navbar related style */
+  #menubar{
+    display: none;
+  }
   .navbar{
     justify-content: space-between;
     align-items: center;
