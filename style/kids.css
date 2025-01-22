@@ -493,9 +493,11 @@
   }
     .navbar{
       display: flex;
-      border: 0.5px solid #FEA301;
+      box-sizing: border-box;
+      border: 0.5px solid rgb(254, 163, 1);
       align-items: center;
       justify-content: space-between;
+      max-width: 100%;
     }
 
     .footer-nav-links{
@@ -505,32 +507,7 @@
     .nav-btn{
         display: none;
     }
-    .hamburger, .toggle-menu{
-      display: block;
-    }
-    /* .header{
-      padding: 10px 20px;
-    } */
-    /* .footer-nav-links{
-      justify-content: start;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      right: -300px;
-      background: rgba(198, 121, 77, 1.0);
-      width: 300px;
-      height: 100%;
-      padding-top: 50px;
-    }
-    .footer-nav-links li{
-      width: 100%;
-    }
-    .footer-nav-links li a, .footer li a:hover{
-      padding: 30px;
-      font-size: 1.5rem;
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
-    } */
+     
     body{
       margin: 0px;
       padding: 0px;
@@ -538,6 +515,8 @@
     .banner{
       flex-direction: column-reverse;
       max-width: 100%;
+      padding: 0px 17px;
+      margin-bottom: 10px;
     }
     .banner-title{
       width: 357px;
@@ -558,7 +537,7 @@
     }
     .main-title{
       font-size: 1.6rem;
-      margin-top: 0px;
+      margin-top: 40px;
     }
     .card-1{
       max-width: 100%;
@@ -620,5 +599,35 @@
       margin-left: 16px;
       margin-bottom: 60px;
     }
+    .banner-btn-container{
+
+    }
+    .banner-btn{
+      margin: 0px;
+      margin-top: 30px;
+    }
+    .slide-btn{
+      display: none;
+    }
+    .standard-curriculum{
+      margin-top: 20px;
+      margin-bottom: ;
+    }
+    .story-title{
+      margin-bottom: 40px;
+    }
+    .story-container{
+      padding: 0px 16px;
+    }
+    .btn1{
+      margin-left: 10px;
+    }
+    .btn-container{
+      margin-top: 20px;
+    }
+    .banner-btn{
+      margin-bottom: 40px;
+    }
+
   }
   
