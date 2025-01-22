@@ -16,7 +16,7 @@
   }
 
   /* Menu-bar related Style */
-  .header{
+  /* .header{
     position: relative;
     transition: 0.3s;
   }
@@ -39,8 +39,8 @@
 }
 .footer-nav-links li a:hover{
   box-shadow: 0 -5px 0px #FEA301 inset;
-  /* 500px 0 0 rgba(255, 255, 255, 0.03) inset;
-  padding: 3px; */
+  500px 0 0 rgba(255, 255, 255, 0.03) inset;
+  padding: 3px;
 }
 
 .hamburger{
@@ -80,7 +80,7 @@
   opacity: 0;
 }
 .hamburger, .toggle-menu{
-  /* display: none; */
+  display: none;
 }
 .navigation input:checked ~.hamburger{
   background: transparent;
@@ -98,7 +98,7 @@
 .navigation input:checked ~.footer-nav-links{
   right: 0;
   box-shadow: -20px 0 40px rgba(0,0,0,0.3);
-}
+} */
 
 
 
@@ -205,7 +205,7 @@
 
 .banner-img{
     margin-top: 18px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .empowering{
@@ -340,7 +340,6 @@
    .btn1{
     font-size: 0.9rem;
     font-weight: 500;
-    font-family: raleway;
     color: white;
     padding: 15px 19px;
     background-color: #3CD8E8;
@@ -362,8 +361,8 @@
    }
   
   .row{
-    width: 540px;
-    height: 630px;
+    max-width: 540px;
+    /* height: 630px; */
     border-radius: 16px;
     background: rgb(255, 255, 255);
     margin-right: 18px;
@@ -376,6 +375,8 @@
   .story1-title{
     font-size: 1.5rem;
     font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 45px;
   }
 
   .story-description{
@@ -398,7 +399,7 @@
   }
 
   .vertical-title{
-    text-align: center;
+    margin-left: 37px;
   }
 
   .btn-container{
@@ -472,10 +473,13 @@
 
   /* Responsive media query for Mobile Device */
   @media screen and (max-width: 576px) {
-    /* .navbar, .scl-icon, .nav-links, .banner{
+    .navbar, .scl-icon, .nav-links, .banner{
         flex-direction: column;
         align-items: flex-start;
-    } */
+    }
+    .footer-nav-links{
+      display: none;
+    }
     .scl,
     .nav-btn{
         display: none;
@@ -486,17 +490,17 @@
     .header{
       padding: 10px 20px;
     }
-    .footer-nav-links{
+    /* .footer-nav-links{
       justify-content: start;
       flex-direction: column;
       align-items: center;
       position: fixed;
       top: 0;
       right: -300px;
-      background: #01ACFD;
+      background: rgba(198, 121, 77, 1.0);
       width: 300px;
       height: 100%;
-      padding-top: 5px;
+      padding-top: 50px;
     }
     .footer-nav-links li{
       width: 100%;
@@ -505,16 +509,24 @@
       padding: 30px;
       font-size: 1.5rem;
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    } */
+    body{
+      margin: 0px;
+      padding: 0px;
     }
     .banner{
       flex-direction: column-reverse;
       max-width: 100%;
     }
     .banner-title{
+      width: 357px;
+      height: 120px;
       font-size: 2rem;
       text-align: center;
     }
     .banner-description{
+      width: 357px;
+      height: 54px;
       text-align: center;
     }
     .banner-btn-container{
@@ -530,9 +542,61 @@
     .card-1{
       max-width: 100%;
     }
-    .cards-container, .story-container, .vertical, .footer-container{
+    #facts-card{
+      margin: 0px;
+      border: 0;
+      margin-bottom: 12px;
+      max-width: 100%;
+    }
+    .cards-container, .story-container,.footer-container{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    .story-container,.story1-img{
+      max-width: 100%;
+    }
+    .row{
+      display: none;
+    }
+    .vertical{
+      max-width: 100%;
+      justify-content: center;
+      gap: 18px;
+    }
+    .footer{
+      margin: 0px;
+      margin-top: 65px;
+      margin-left: 16px;
+      margin-bottom: 20px;
+      font-size: 2.1rem;
+      font-weight: bold;
+    }
+    .footer-description{
+      margin: 0px;
+      width: 357px;
+      height: 80px;
+      letter-spacing: 0%;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .about-title{
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .footer-links{
+      margin: 0px;
+      padding: 0px;
+      margin-left: 16px;
+    }
+    .footer-item{
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    .keep-in-touch{
+      margin: 0px;
+      margin-left: 16px;
+      margin-bottom: 60px;
     }
   }
   
